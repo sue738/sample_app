@@ -5,7 +5,7 @@ development:
   username: sue738
   password: sensei1117
 
-test:
+test: &test
   encoding: unicode
   adapter: postgresql
   database: sampleapp_test
@@ -19,3 +19,6 @@ production:
   username: sue738
   password: sensei1117
 
+
+cucumber:
+  <<: *test
